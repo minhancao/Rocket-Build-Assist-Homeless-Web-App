@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="101" height="94.52" viewBox="0 0 101 94.52">
+  <g id="Group_8" data-name="Group 8" transform="translate(-230 -850.48)">
+    <line id="Line_5" data-name="Line 5" y2="55" transform="translate(232.5 887.5)" fill="none" stroke="#4784a8" stroke-width="5"/>
+    <line id="Line_6" data-name="Line 6" x1="96" transform="translate(232.5 942.5)" fill="none" stroke="#4784a8" stroke-width="5"/>
+    <line id="Line_7" data-name="Line 7" y2="55" transform="translate(328.5 887.5)" fill="none" stroke="#4784a8" stroke-width="5"/>
+    <line id="Line_10" data-name="Line 10" x2="96" transform="translate(232.5 887.5)" fill="none" stroke="#4784a8" stroke-width="5"/>
+    <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(242 893)" fill="#fff" stroke="#4784a8" stroke-width="5">
+      <rect width="22.897" height="21.692" stroke="none"/>
+      <rect x="2.5" y="2.5" width="17.897" height="16.692" fill="none"/>
+    </g>
+    <line id="Line_14" data-name="Line 14" y2="21.692" transform="translate(253.449 893.603)" fill="none" stroke="#4784a8" stroke-width="5"/>
+    <line id="Line_15" data-name="Line 15" x2="22.897" transform="translate(242.603 904.449)" fill="none" stroke="#4784a8" stroke-width="5"/>
+    <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(296 893)" fill="#fff" stroke="#4784a8" stroke-width="5">
+      <rect width="22.897" height="21.692" stroke="none"/>
+      <rect x="2.5" y="2.5" width="17.897" height="16.692" fill="none"/>
+    </g>
+    <line id="Line_16" data-name="Line 16" y2="21.692" transform="translate(307.449 893.603)" fill="none" stroke="#4784a8" stroke-width="5"/>
+    <line id="Line_17" data-name="Line 17" x2="22.897" transform="translate(296.603 904.449)" fill="none" stroke="#4784a8" stroke-width="5"/>
+    <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(265 921)" fill="#fff" stroke="#4784a8" stroke-width="5">
+      <rect width="31" height="22" stroke="none"/>
+      <rect x="2.5" y="2.5" width="26" height="17" fill="none"/>
+    </g>
+    <line id="Line_18" data-name="Line 18" y1="35" x2="48" transform="translate(232.5 852.5)" fill="none" stroke="#4784a8" stroke-width="5"/>
+    <line id="Line_19" data-name="Line 19" x1="48" y1="35" transform="translate(280.5 852.5)" fill="none" stroke="#4784a8" stroke-width="5"/>
+  </g>
+</svg>
