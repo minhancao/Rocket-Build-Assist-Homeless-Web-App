@@ -1,11 +1,5 @@
 import React, { Component } from "react";
-import {
-  Collapse,
-  Button,
-  Modal,
-  Input,
-  Form,
-} from "antd";
+import { Collapse, Button, Modal, Input, Form } from "antd";
 // import { Collapse, Button, CardBody, Card } from 'reactstrap';
 
 const Panel = Collapse.Panel;
@@ -89,6 +83,22 @@ const foodData = [
     date: "2019-01-05",
     distance: "1.1",
     description: "We have meals"
+  }
+];
+const healthData = [
+  {
+    name: "Free Clinics",
+    date: "2019-03-27",
+    distance: "0",
+    description: "Go to our website!",
+    link: "https://www.freeclinics.com/"
+  },
+  {
+    name: "Dr. Dogtor",
+    date: "2019-01-05",
+    distance: "4",
+    description: "Bark Bark Bark",
+    link: "/"
   }
 ];
 
@@ -273,7 +283,8 @@ class Resources extends Component {
     kitchenData: foodData,
     shelterData: shelterData,
     jobOpportunityData: jobOpportunityData,
-    jobTrainingData: jobTrainingData
+    jobTrainingData: jobTrainingData,
+    healthData: healthData
   };
 
   showKitchenModal = () => {
@@ -403,11 +414,11 @@ class Resources extends Component {
   render() {
     return (
       <div className="dashboard-content2" style={{ textAlign: "center" }}>
-        <br></br>
+        <br />
         <div>
           <Button
             style={{
-              borderRadius:'10px'
+              borderRadius: "10px"
             }}
             size="large"
             onClick={this.showKitchenModal}
@@ -422,7 +433,7 @@ class Resources extends Component {
           />
           <Button
             style={{
-              borderRadius:'10px'
+              borderRadius: "10px"
             }}
             size="large"
             onClick={this.showShelterModal}
@@ -437,7 +448,7 @@ class Resources extends Component {
           />
           <Button
             style={{
-              borderRadius:'10px'
+              borderRadius: "10px"
             }}
             size="large"
             onClick={this.showJobOpportunityModal}
@@ -452,7 +463,7 @@ class Resources extends Component {
           />
           <Button
             style={{
-              borderRadius:'10px'
+              borderRadius: "10px"
             }}
             size="large"
             onClick={this.showJobTrainingModal}
@@ -466,7 +477,7 @@ class Resources extends Component {
             onCreate={this.jobTrainingHandleCreate}
           />
         </div>
-        <br></br>
+        <br />
         <div style={{ textAlign: "center" }}>I need help with:</div>
 
         <Collapse
@@ -653,6 +664,45 @@ class Resources extends Component {
                 ))}
               </Panel>
             </Collapse>
+          </Panel>
+          <Panel header="Health" key="6">
+            {Object.keys(this.state.healthData).map(key => (
+              <div class="card">
+                <div class="container">
+                  <div>
+                    <h5
+                      style={{
+                        display: "inline-block",
+                        verticalAlign: "middle"
+                      }}
+                    >
+                      <b>{this.state.healthData[key]["name"]}</b>
+                    </h5>
+                    <small
+                      class="alignright"
+                      style={{
+                        textAlign: "right",
+                        display: "inline-block",
+                        top: "50%",
+                        transform: "translateY(75%)"
+                      }}
+                    >
+                      {this.state.healthData[key]["date"] +
+                        ": " +
+                        this.state.healthData[key]["distance"]}
+                    </small>
+                  </div>
+                  <hr />
+                  <div>
+                    <p style={{ display: "inline-block" }}>
+                      <a href={this.state.healthData[key]["link"]}>
+                        {this.state.healthData[key]["description"]}
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </Panel>
         </Collapse>
       </div>
